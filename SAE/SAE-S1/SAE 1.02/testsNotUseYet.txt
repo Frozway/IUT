@@ -1,0 +1,423 @@
+
+/*
+ * Tests
+ * Aucune idée
+ */
+void test_deleteList()
+{
+    int pass = 0;
+    int failed = 0;
+    cout << "********* Start testing of deleteList *********" << endl;
+    if (false)
+    {
+        cout << "PASS \t: xxx" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: xxx" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of deleteList *********" << endl;
+}
+/*
+ * Utility functions for The Game
+ */
+
+/*
+ * Tests
+ * liste 1, 2 et 3, carte 5 -> top = 5 size = 4
+ * liste vide carte 5 -> top = 5 size = 1
+ */
+void test_putACard()
+{
+    int pass = 0;
+    int failed = 0;
+    List * fundation;
+    cout << "********* Start testing of putACard *********" << endl;
+    fundation = new List;
+    initList(fundation, 1, 2, 3);
+    putACard(fundation, 5);
+    if (fundation->first->value == 5 and fundation->size == 4)
+    {
+        cout << "PASS \t: add 5 on {1,2,3}" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: add 5 on {1,2,3}" << endl;
+        failed++;
+    }
+    emptyList(fundation);
+    delete fundation;
+    fundation = new List;
+    putACard(fundation, 5);
+    if (fundation->first->value == 5 and fundation->size == 1)
+    {
+        cout << "PASS \t: add 5 on {}" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: add 5 on {}" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of putACard *********" << endl;
+    delete fundation;
+}
+
+/*
+ * Tests
+ * shuffle une liste -> taille = 98
+ * shuffle deux listes et compter les différences -> >0
+ */
+void test_shuffle()
+{
+    int pass = 0;
+    int failed = 0;
+    List * stockA;
+    List * stockB;
+    stockA = new List;
+    stockB = new List;
+    cout << "********* Start testing of shuffle *********" << endl;
+    shuffle(stockA);
+    if (stockA->size == 98)
+    {
+        cout << "PASS \t: shuffle size 98" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: shuffle size 98" << endl;
+        failed++;
+    }
+    shuffle(stockB);
+    int diff = 0;
+    Element * eltA = stockA->first;
+    Element * eltB = stockB->first;
+    for (; eltA != nullptr and eltB != nullptr ; eltA = eltA->next, eltB = eltB->next)
+    {
+        if (eltA->value != eltB->value)
+        {
+            diff++;
+        }
+    }
+    delete eltA;
+    delete eltB;
+    if (diff > 0)
+    {
+        cout << "PASS \t: shuffle diff (" << diff << ")" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: shuffle diff (" << diff << ")" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of shuffle *********" << endl;
+    emptyList(stockA);
+    emptyList(stockB);
+    delete stockA;
+    delete stockB;
+}
+
+/*
+ * Tests
+ * état initial visualiser l'affichage
+ * donner des valeurs avec une petite main et affichage
+ */
+void test_displayBoard()
+{
+    int pass = 0;
+    int failed = 0;
+    cout << "********* Start testing of displayBoard *********" << endl;
+    if (false)
+    {
+        cout << "PASS \t: xxx" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: xxx" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of displayBoard *********" << endl;
+}
+
+/*
+ * Tests
+ * Liste contenant 17, carte = 18 -> true et top = 18
+ * Liste contenant 17, carte = 16 -> false et top = 17
+ * Liste contenant 17, carte = 7 -> true et top = 7
+ */
+void test_moveUp()
+{
+    int pass = 0;
+    int failed = 0;
+    List * fundation;
+    fundation = new List;
+    cout << "********* Start testing of moveUp *********" << endl;
+    addElt(fundation, 17);
+    if (moveUp(fundation, 18) and top(fundation) == 18)
+    {
+        cout << "PASS \t: Put 18 on 17" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Put 18 on 17" << endl;
+        failed++;
+    }
+    addElt(fundation, 17);
+    if (!moveUp(fundation, 16) and top(fundation) == 17)
+    {
+        cout << "PASS \t: Put 16 on 17" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Put 16 on 17" << endl;
+        failed++;
+    }
+    addElt(fundation, 17);
+    if (moveUp(fundation, 7) and top(fundation) == 7)
+    {
+        cout << "PASS \t: Put 7 on 17" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Put 7 on 17" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of moveUp *********" << endl;
+    emptyList(fundation);
+    delete fundation;
+}
+
+/*
+ * Tests
+ * Liste contenant 56, carte = 55 -> true et top = 55
+ * Liste contenant 56, carte = 57 -> false et top = 56
+ * Liste contenant 56, carte = 66 -> true et top = 66
+ */
+void test_moveDown()
+{
+    int pass = 0;
+    int failed = 0;
+    List * fundation;
+    fundation = new List;
+    addElt(fundation, 56);
+    cout << "********* Start testing of moveDown *********" << endl;
+    if (moveDown(fundation, 55) and top(fundation) == 55)
+    {
+        cout << "PASS \t: Put 55 on 56" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Put 55 on 56" << endl;
+        failed++;
+    }
+    addElt(fundation, 56);
+    if (!moveDown(fundation, 57) and top(fundation) == 56)
+    {
+        cout << "PASS \t: Put 57 on 56" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Put 57 on 56" << endl;
+        failed++;
+    }
+    addElt(fundation, 56);
+    if (moveDown(fundation, 66) and top(fundation) == 66)
+    {
+        cout << "PASS \t: Put 66 on 56" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Put 66 on 56" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of moveDown *********" << endl;
+    emptyList(fundation);
+    delete fundation;
+}
+
+/*
+ * Tests
+ * Exécuter play, saisir 72 et C et voir valeur de retour -> 72 et C
+ * Exécuter play, saisir 1 et C et voir valeur de retour -> ne doit pas être possible de saisir 1
+ * Exécuter play, saisir 72 et R et voir valeur de retour -> ne doit pas être possible de saisir R
+ */
+void test_play()
+{
+    int pass = 0;
+    int failed = 0;
+    cout << "********* Start testing of play *********" << endl;
+    int nb;
+    char c;
+    cout << "saisir 72 puis C" << endl;
+    play(nb, c);
+    if (nb == 72 and c == 'C')
+    {
+        cout << "PASS \t: 72 et C" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: 72 et C" << endl;
+        failed++;
+    }
+    cout << "saisir 1 puis C" << endl;
+    play(nb, c);
+    if (nb == 1)
+    {
+        cout << "FAIL! \t: 1 et C" << endl;
+        failed++;
+    }
+    else
+    {
+        cout << "PASS \t: 1 et C" << endl;
+        pass++;
+    }
+    cout << "saisir 72 puis R" << endl;
+    play(nb, c);
+    if (c == 'R')
+    {
+        cout << "FAIL! \t: 72 et R" << endl;
+        failed++;
+    }
+    else
+    {
+        cout << "PASS \t: 72 et R" << endl;
+        pass++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of play *********" << endl;
+}
+
+/*
+ * Tests
+ * 1, 2 et 3 dans la main et value 3 -> true
+ * 1, 2 et 3 dans la main et value 2 -> true
+ * 1, 2 et 3 dans la main et value 1 -> true
+ * 1, 2 et 3 dans la main et value 4 -> false
+ * main vide et value 7 -> false
+ */
+void test_isValid()
+{
+    int pass = 0;
+    int failed = 0;
+    List * hand;
+    hand = new List;
+    initList(hand, 1, 2, 3);
+    cout << "********* Start testing of isValid *********" << endl;
+    for (int i = 1; i < 4; i++)
+    {
+        if (isValid(hand, i))
+        {
+            cout << "PASS \t: "<< i <<" in {1,2,3}" << endl;
+            pass++;
+        }
+        else
+        {
+            cout << "FAIL! \t: "<< i << " in {1,2,3}" << endl;
+            failed++;
+        }
+    }
+    if (!isValid(hand, 4))
+    {
+        cout << "PASS \t: 4 in {1,2,3}" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: 4 in {1,2,3}" << endl;
+        failed++;
+    }
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of isValid *********" << endl;
+    emptyList(hand);
+    delete hand;
+}
+
+/*
+ * Tests
+ * Require shuffle, insert, top and pop
+ * listes vides -> 0
+ * état initial du jeu -> 4 949
+ * une liste avec 1, 2 et 3 et une avec 4, 5, 6 -> 21
+ */
+void test_score()
+{
+    int pass = 0;
+    int failed = 0;
+    List * stock;
+    List * hand;
+    cout << "********* Start testing of score *********" << endl;
+    stock = new List;
+    hand = new List;
+    if (score(hand, stock) == 0)
+    {
+        cout << "PASS \t: Listes vides" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Listes vides" << endl;
+        failed++;
+    }
+    shuffle(stock);
+    for (int i=0; i<8; i++)
+    {
+        Element * elt;
+        elt = new Element;
+        elt->value = top(stock);
+        insert(hand, elt);
+        pop(stock);
+    }
+    if (score(hand, stock) == 4949)
+    {
+        cout << "PASS \t: Début de partie" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: Début de partie" << endl;
+        failed++;
+    }
+    emptyList(stock);
+    emptyList(hand);
+    delete stock;
+    delete hand;
+    stock = new List;
+    hand = new List;
+    initList(stock, 1, 2, 3);
+    initList(hand, 4, 5, 6);
+    if (score(hand, stock) == 21)
+    {
+        cout << "PASS \t: stock {1,2,3} hand {4,5,6}" << endl;
+        pass++;
+    }
+    else
+    {
+        cout << "FAIL! \t: stock {1,2,3} hand {4,5,6}" << endl;
+        failed++;
+    }
+    emptyList(stock);
+    emptyList(hand);
+    cout << "Totals: " << pass << " passed, " << failed << " failed" << endl;
+    cout << "********* Finished testing of score *********" << endl;
+    delete stock;
+    delete hand;
+}
+*/

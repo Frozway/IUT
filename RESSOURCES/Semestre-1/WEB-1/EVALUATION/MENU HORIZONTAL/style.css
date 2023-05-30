@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(151, 151, 151);
+}
+
+a{
+    display: block;
+    padding: 10px;
+    width: 75px;
+    border-bottom: 4px solid black;
+    color: black;
+    background-color: rgb(201, 201, 201);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(240, 215, 73);
+}
+
+li{
+    text-align: center ;
+    padding-right: 10px;
+}
+
+.menu{
+    display : flex ;
+    padding : 0 ;
+    margin : 0 ;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+.active:hover{
+    background-color: aqua;
+}
+
+.active{
+    background-color: aqua;
+    border-bottom: 5px solid rgb(0, 124, 124);
+}

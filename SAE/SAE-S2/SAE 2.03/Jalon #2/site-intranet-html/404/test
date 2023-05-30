@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* Barre de navigation */
+.navbar {
+    background: #FFF;
+    padding: 0 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.navbar-brand{
+    width: 300px;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-brand{
+    font: "Open Sauce One";
+    font-size: 29px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #23daf8;
+}
+
+/* Contenu de la page */
+.mainpage {
+    background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%);
+    font-family: "Poppins";    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
+  }
+
+/* Formulaire de connexion */
+.login-box {
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius:15px;
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.form {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 450px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius:15px;
+}
+
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius:15px;
+  }
+  
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #29c9f8;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius:15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #19EBF8;
+  }
+  
+  #logout-button{
+    text-transform: uppercase;
+    outline: 0;
+    background: #29c9f8;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius:15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  
+
+  #logout-button:hover,#logout-button:active,#logout-button:focus {
+    background: #19EBF8;
+  }
+
+
+/* Page logout.php */
+.mainpage-logout {
+  background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%);
+  font-family: "Poppins";    
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.mainpage-logout h1{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0 0 0;
+  padding: 0 0 20px;
+}
+
+.content{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 50px;
+  background-color: #FFF;
+  width: 90vw;
+  height: 800px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+  

@@ -1,0 +1,49 @@
+-- Insertion d'un nouveau client
+insert into client (idcli, nomcli, prenomcli, telcli, mailcli, adrcli)
+values (1, 'LEFRANCOIS', 'Thibaut', 0783221845, 'thibaut@gmail.com', 'La Rochelle');
+
+------------------------------
+-- Insertion d'une nouvelle commande
+insert into client (idcli, nomcli, prenomcli, telcli, mailcli, adrcli)
+values (1, 'LEFRANCOIS', 'Thibaut', 0783221845, 'thibaut@gmail.com', 'La Rochelle');
+
+insert into commande (idcom, idcli, datecom, datelivest)
+values (1, 1, to_date('01/01/2023', 'DD/MM/YYYY'), to_date('01/02/2023', 'DD/MM/YYYY'));
+
+------------------------------
+-- Insertion d'un nouveau produit
+insert into produit (idpro, nompro, typepro)
+values (100, 'tarte', 'dessert');
+
+------------------------------
+-- Insertion d'une nouvelle ligne de commande
+insert into client (idcli, nomcli, prenomcli, telcli, mailcli, adrcli)
+values (1, 'LEFRANCOIS', 'Thibaut', 0783221845, 'thibaut@gmail.com', 'La Rochelle');
+
+insert into commande (idcom, idcli, datecom, datelivest)
+values (1, 1, to_date('01/01/2023', 'DD/MM/YYYY'), to_date('01/02/2023', 'DD/MM/YYYY'));
+
+insert into produit (idpro, nompro, typepro)
+values (100, 'tarte', 'dessert');
+
+insert into ligne_commande (idligcom, idcom, idpro, qtecom, prix_unit)
+values (1, 1, 100, 5, 9.99);
+
+------------------------------
+-- Insertion d'un nouveau livreur
+insert into livreur (idliv, prenomliv, nomliv)
+values (44, 'Julien', 'LACASSE');
+
+------------------------------
+-- Insertion d'une nouvelle livraison
+insert into client (idcli, nomcli, prenomcli, telcli, mailcli, adrcli)
+values (1, 'LEFRANCOIS', 'Thibaut', 0783221845, 'thibaut@gmail.com', 'La Rochelle');
+
+insert into commande (idcom, idcli, datecom, datelivest)
+values (1, 1, to_date('01/01/2023', 'DD/MM/YYYY'), to_date('01/02/2023', 'DD/MM/YYYY'));
+
+insert into livreur (idliv, prenomliv, nomliv)
+values (44, 'Marcel', 'TREULLIT');
+
+insert into livraison (idliv, idcom, datelivreal)
+values (44, 1, to_date('20/05/2023', 'DD/MM/YYYY'));

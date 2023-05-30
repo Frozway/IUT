@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tek-it-Izy - Public Website</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="http://www.tek-it-izy.org" onclick="event.preventDefault(); window.location.href='http://www.tek-it-izy.org';">
+            <img src="https://i.imgur.com/1kzQawr.png" width="100"  class="d-inline-block align-top" alt="">
+            Tek-it-Izy
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#infos">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="http://intranet.tek-it-izy.org" onclick="event.preventDefault(); window.location.href='http://intranet.tek-it-izy.org';">Intranet</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <h1>Tek-it-Izy, <br>Innovation, our passion.</h1>
+    </header>
+
+     <!-- Tests des différentes erreurs-->
+     <div class="errors">
+        <a href="/page-inexistante.html">Not existing page</a>
+        <a href="/testfolder">Folder without permissions</a>
+        <a href="/arborescence">Arborescence</a>
+    </div>
+
+    <!-- Section 1 présentation de l'entreprise avec des images -->
+    <section id="infos" class="infos">
+        <div class="infos-container">
+            <div class="infos-left">
+                <h2>Who are we ?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas. Quaerat, dolorum. Quisquam, quod! Quisquam, quae. Quas, quod. Quisquam, quia.</p>
+                <a class="more-button" href="./more-presentation.html">More...</a>
+            </div>
+            <div class="infos-right">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-sql-illustration_23-2149242071.jpg?w=2000" alt="">
+            </div>
+        </div>
+        <div class="infos-container">
+            <div class="infos-left">
+                <img src="https://img.freepik.com/free-vector/app-development-concept-illustration_114360-5164.jpg?w=2000" alt="">
+            </div>
+            <div class="infos-right">
+                <h2>Our mission</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas. Quaerat, dolorum. Quisquam, quod! Quisquam, quae. Quas, quod. Quisquam, quia.</p>
+                <a class="more-button" href="./more-mission.html">More...</a>
+            </div>
+           
+        </div>
+    </section>
+    
+    <!-- Informations de contact fictives avec son style -->
+    <section id="contact" class="contact">
+        
+        <div class="contact-elt">
+            <h2>Contact</h2>
+            <p>In order to contact us, please use the following informations.</p>
+        </div>
+
+        <div class="contact-infos">
+            <div class="contact-item">
+                <img src="https://img.icons8.com/ios/50/FFFFFF/phone.png" alt="">
+                <p>+404 403</p>
+            </div>
+            <div class="contact-item">
+                <img src="https://img.icons8.com/ios/50/FFFFFF/email.png" alt="">
+                <p><a href="mailto:xxx">tek-it@izy.org</a></p>
+            </div>
+            <div class="contact-item">
+                <img src="https://img.icons8.com/ios/50/FFFFFF/address.png" alt="">                        
+                <p>68 Sillicon Valley, San Fransisco</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

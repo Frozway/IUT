@@ -1,0 +1,58 @@
+
+
+-------------
+  Separator
+-------------
+
+2023-03-31 09:33:10: ACTION[Main]: World at [C:\Users\tibol\Desktop\minetest-5.6.1-win64\minetest-5.6.1-win64\bin\..\worlds\GPO]
+2023-03-31 09:33:10: ACTION[Main]: Server for gameid="minetest" listening on 0.0.0.0:51417.
+2023-03-31 09:33:12: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2023-03-31 09:41:02: ACTION[Server]: singleplayer takes doors:gate_aspen_wood_closed from creative inventory
+2023-03-31 09:41:05: ACTION[Server]: singleplayer takes doors:door_wood from creative inventory
+2023-03-31 09:41:10: ACTION[Server]: singleplayer takes doors:door_wood from creative inventory
+2023-03-31 09:41:31: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:31: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:32: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:32: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:32: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:33: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:34: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:35: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:35: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:35: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:39: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:39: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:40: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:41: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:41: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:42: ACTION[Server]: singleplayer activates doors:door_wood
+2023-03-31 09:41:58: ACTION[Server]: singleplayer digs doors:door_wood_a at (-256,9,260)
+2023-03-31 09:44:04: ACTION[Server]: singleplayer takes default:chest from creative inventory
+2023-03-31 09:44:14: ACTION[Server]: singleplayer takes default:sign_wall_wood from creative inventory
+2023-03-31 09:44:19: ACTION[Server]: singleplayer digs doors:door_wood_c at (-240,9,253)
+2023-03-31 09:44:45: ACTION[Server]: singleplayer places node default:chest at (-254,9,252)
+2023-03-31 09:44:50: ACTION[Server]: singleplayer places node default:sign_wall_wood at (-253,9,252)
+2023-03-31 09:44:54: ACTION[Server]: singleplayer wrote "Maison" to the sign at (-253,9,252)
+2023-03-31 09:45:14: ACTION[Server]: singleplayer takes default:fence_wood from creative inventory
+2023-03-31 09:45:19: ACTION[Server]: singleplayer moves default:fence_wood to chest at (-254,9,252)
+2023-03-31 09:45:28: ACTION[Server]: singleplayer takes default:ladder_wood from creative inventory
+2023-03-31 09:45:29: ACTION[Server]: singleplayer moves default:ladder_wood to chest at (-254,9,252)
+2023-03-31 09:45:36: ACTION[Server]: singleplayer takes default:stone from creative inventory
+2023-03-31 09:45:37: ACTION[Server]: singleplayer takes default:cobble from creative inventory
+2023-03-31 09:45:54: ACTION[Server]: singleplayer moves default:stone to chest at (-254,9,252)
+2023-03-31 09:45:55: ACTION[Server]: singleplayer moves default:cobble to chest at (-254,9,252)
+2023-03-31 09:46:59: ACTION[Server]: singleplayer takes stairs:stair_junglewood from creative inventory
+2023-03-31 09:47:07: ACTION[Server]: singleplayer places node stairs:stair_junglewood at (-252,9,256)
+2023-03-31 09:47:08: ACTION[Server]: singleplayer places node stairs:stair_junglewood at (-252,9,257)
+2023-03-31 10:00:35: ACTION[Server]: singleplayer takes default:mese_post_light_pine_wood from creative inventory
+2023-03-31 10:00:37: ACTION[Server]: singleplayer takes default:meselamp from creative inventory
+2023-03-31 10:00:43: ACTION[Server]: singleplayer places node default:mese_post_light_pine_wood at (-252,9,261)
+2023-03-31 10:00:55: ACTION[Server]: singleplayer places node default:meselamp at (-254,9,261)
+2023-03-31 10:01:31: ACTION[Main]: Server: Shutting down
+
+
+-------------
+  Separator
+-------------
+
+2023-05-04 08:36:27: [Main]: Automatically selecting world at [C:\Users\tibol\Desktop\IUT\RESSOURCES\Semestre-2\GPO-2\Minetest\minetest-5.6.1-win64\minetest-5.6.1-win64\bin\..\worlds\GPO]

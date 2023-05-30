@@ -1,0 +1,856 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="SQL*Plus 12.1.0">
+<title>Description des tables</title>  <style type="text/css">table.myTable { border-collapse:collapse; } table.myTable td, table.myTable th { border:1px solid black;padding:5px; } </style>
+</head>
+<body>
+<table class='myTable'>
+</table>
+<p>
+<p>
+<table width="90%" summary="Script output">
+<tr>
+<td>
+Thu Apr 06
+</td>
+<td>
+<center>
+<h3>Description of the columns of the database : Hotel management</h3>
+</center>
+</td>
+<td>
+page 1
+</td>
+</tr>
+</table>
+<table class='myTable'>
+<tr>
+<th scope="col">
+Table
+</th>
+<th scope="col">
+Colonne
+</th>
+<th scope="col">
+Type
+</th>
+<th scope="col">
+Taille
+</th>
+<th scope="col">
+O
+</th>
+<th scope="col">
+Description
+</th>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+ARRIVAL
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Arrival date of the booking
+</td>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+CLIENT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Customer who made the booking
+</td>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+DEPARTURE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Departure date of the booking
+</td>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+DURATION
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+FEES
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Fees of the booking
+</td>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+ID_BOOKING
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the booking
+</td>
+</tr>
+<tr>
+<td>
+BOOKING
+</td>
+<td>
+PRICE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Price of the booking
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER
+</td>
+<td>
+BIRTHDATE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Birth date of the customer
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER
+</td>
+<td>
+EMAIL
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        30
+</td>
+<td>
+F
+</td>
+<td>
+Email of the customer
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER
+</td>
+<td>
+FIRSTNAME
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        30
+</td>
+<td>
+O
+</td>
+<td>
+First name of the customer
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER
+</td>
+<td>
+ID_CUSTOMER
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the customer
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER
+</td>
+<td>
+LASTNAME
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        30
+</td>
+<td>
+O
+</td>
+<td>
+Last name of the customer
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER
+</td>
+<td>
+PHONE_NUMBER
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Phone number of the customer
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+CITY
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+City of the customer address
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+COUNTRY
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Country of the customer address
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+COUNTRY_CODE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+         3
+</td>
+<td>
+O
+</td>
+<td>
+Country code of the customer address
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+CUSTOMER
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the customer who live here
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+POSTAL_CODE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Postal code of the customer address
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+STREET_NAME
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        30
+</td>
+<td>
+O
+</td>
+<td>
+Street name of the customer address
+</td>
+</tr>
+<tr>
+<td>
+CUSTOMER_ADDRESS
+</td>
+<td>
+STREET_NUM
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Street number of the customer address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL
+</td>
+<td>
+EMAIL
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        30
+</td>
+<td>
+O
+</td>
+<td>
+Email of the hotel
+</td>
+</tr>
+<tr>
+<td>
+HOTEL
+</td>
+<td>
+ID_HOTEL
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the hotel
+</td>
+</tr>
+<tr>
+<td>
+HOTEL
+</td>
+<td>
+NAME
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        50
+</td>
+<td>
+O
+</td>
+<td>
+Name of the hotel
+</td>
+</tr>
+<tr>
+<td>
+HOTEL
+</td>
+<td>
+PHONE_NUMBER
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Phone number of the hotel
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+CITY
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        50
+</td>
+<td>
+O
+</td>
+<td>
+City of the hotel address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+COUNTRY
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        50
+</td>
+<td>
+O
+</td>
+<td>
+Country of the hotel address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+COUNTRY_CODE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+         3
+</td>
+<td>
+O
+</td>
+<td>
+Country code of the hotel address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+HOTEL
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the hotel located at this address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+POSTAL_CODE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Postal code of the hotel address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+STREET_NAME
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        50
+</td>
+<td>
+O
+</td>
+<td>
+Street name of the hotel address
+</td>
+</tr>
+<tr>
+<td>
+HOTEL_ADDRESS
+</td>
+<td>
+STREET_NUM
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Street number of the hotel address
+</td>
+</tr>
+<tr>
+<td>
+ROOM
+</td>
+<td>
+CURRENT_BOOKING
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+F
+</td>
+<td>
+Booking currently assigned to the room
+</td>
+</tr>
+<tr>
+<td>
+ROOM
+</td>
+<td>
+HOTEL
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Hotel where the room is located
+</td>
+</tr>
+<tr>
+<td>
+ROOM
+</td>
+<td>
+ID_ROOM
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the room
+</td>
+</tr>
+<tr>
+<td>
+ROOM
+</td>
+<td>
+ROOM_NO
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Number of the room
+</td>
+</tr>
+<tr>
+<td>
+ROOM
+</td>
+<td>
+TYPE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Type of the room
+</td>
+</tr>
+<tr>
+<td>
+ROOM_TYPE
+</td>
+<td>
+BEDS_NUM
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Number of beds in the room type
+</td>
+</tr>
+<tr>
+<td>
+ROOM_TYPE
+</td>
+<td>
+CAPACITY
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Capacity of the room type
+</td>
+</tr>
+<tr>
+<td>
+ROOM_TYPE
+</td>
+<td>
+CONFORT_LEVEL
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        10
+</td>
+<td>
+O
+</td>
+<td>
+Comfort level of the room type
+</td>
+</tr>
+<tr>
+<td>
+ROOM_TYPE
+</td>
+<td>
+ID_ROOM_TYPE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifier of the room type
+</td>
+</tr>
+</table>
+<p>
+
+40 rows selected.<br>
+<br>
+
+
+</body>
+</html>

@@ -1,0 +1,1236 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="generator" content="SQL*Plus 12.1.0">
+<title>Description des colonnes des tables</title>  <style type="text/css">table.myTable { border-collapse:collapse; } table.myTable td, table.myTable th { border:1px solid black;padding:5px; } </style>
+</head>
+<body>
+<table class='myTable'>
+</table>
+<p>
+<p>
+<table width="90%" summary="Script output">
+<tr>
+<td>
+Mon Jan 30
+</td>
+<td>
+<center>
+<h3>Description des relations de la bases de données : Magasin Réparation Vél
+</center>
+</td>
+<td>
+page 1
+</td>
+</tr>
+</table>
+<table class='myTable'>
+<tr>
+<th scope="col">
+Table
+</th>
+<th scope="col">
+Colonne
+</th>
+<th scope="col">
+Type
+</th>
+<th scope="col">
+Taille
+</th>
+<th scope="col">
+O
+</th>
+<th scope="col">
+Description
+</th>
+</tr>
+<tr>
+<td>
+ADRESSE
+</td>
+<td>
+CODE_POSTAL
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        10
+</td>
+<td>
+O
+</td>
+<td>
+Code postal d'une adresse
+</td>
+</tr>
+<tr>
+<td>
+ADRESSE
+</td>
+<td>
+COMMUNE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        50
+</td>
+<td>
+O
+</td>
+<td>
+Commune d'une adressse : particuli??rement les communes du 17
+</td>
+</tr>
+<tr>
+<td>
+ADRESSE
+</td>
+<td>
+ID_ADRESSE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant d'une adresse postale
+</td>
+</tr>
+<tr>
+<td>
+ADRESSE
+</td>
+<td>
+INTITULE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+       500
+</td>
+<td>
+O
+</td>
+<td>
+D??signation compl??te d'une adresse : num??ro, rue, etc.
+</td>
+</tr>
+<tr>
+<td>
+CATEG_VELO
+</td>
+<td>
+ID_CATEG
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant de la cat??gorie du v??lo (PK)
+</td>
+</tr>
+<tr>
+<td>
+CATEG_VELO
+</td>
+<td>
+LIBELLE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Libell?? de la cat??gorie du v??lo : HOMME, FEMME, ENFANT (CK)
+</td>
+</tr>
+<tr>
+<td>
+CLIENT
+</td>
+<td>
+ADRESSE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Adresse du client (FK)
+</td>
+</tr>
+<tr>
+<td>
+CLIENT
+</td>
+<td>
+EMAIL
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+       100
+</td>
+<td>
+O
+</td>
+<td>
+Email du client (UQ)
+</td>
+</tr>
+<tr>
+<td>
+CLIENT
+</td>
+<td>
+ID_CLIENT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du client (PK)
+</td>
+</tr>
+<tr>
+<td>
+CLIENT
+</td>
+<td>
+NOM
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Nom du client
+</td>
+</tr>
+<tr>
+<td>
+CLIENT
+</td>
+<td>
+PRENOM
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Pr??nom du client
+</td>
+</tr>
+<tr>
+<td>
+CLIENT
+</td>
+<td>
+TEL
+</td>
+<td>
+CHAR
+</td>
+<td align="right">
+        10
+</td>
+<td>
+O
+</td>
+<td>
+T??l??phone du client
+</td>
+</tr>
+<tr>
+<td>
+DEPOT
+</td>
+<td>
+CLIENT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Client ayant d??pos?? le v??lo (FK)
+</td>
+</tr>
+<tr>
+<td>
+DEPOT
+</td>
+<td>
+DATE_DEPOT
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Date de d??p??t du v??lo par client
+</td>
+</tr>
+<tr>
+<td>
+DEPOT
+</td>
+<td>
+ID_DEPOT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du d??p??t du v??lo par client (PK)
+</td>
+</tr>
+<tr>
+<td>
+DEPOT
+</td>
+<td>
+VELO
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+V??lo d??pos?? par client (FK)
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+CATEG
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Cat??gorie du v??lo (FK)
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+DATE_FABRICATION
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+F
+</td>
+<td>
+Date de fabrication du v??lo
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+ID_DETAIL_VELO
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du d??tail du v??lo (PK)
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+MARQUE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Marque du v??lo (FK)
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+TAILLE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Taille du v??lo (FK)
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+TYPE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Type du v??lo (FK)
+</td>
+</tr>
+<tr>
+<td>
+DETAIL_VELO
+</td>
+<td>
+VELO
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+V??lo concern?? par le d??tail (FK)
+</td>
+</tr>
+<tr>
+<td>
+FACTURE
+</td>
+<td>
+DATE_EMISSION
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Date d'??mission de la facture
+</td>
+</tr>
+<tr>
+<td>
+FACTURE
+</td>
+<td>
+ID_FACTURE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant de la facture (PK)
+</td>
+</tr>
+<tr>
+<td>
+FACTURE
+</td>
+<td>
+MONTANT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Montant de la facture
+</td>
+</tr>
+<tr>
+<td>
+FACTURE
+</td>
+<td>
+REPARATION
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+R??paration concern??e par la facture (FK)
+</td>
+</tr>
+<tr>
+<td>
+MARQUE_VELO
+</td>
+<td>
+ID_MARQUE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Idenfiant de la marque du v??lo
+</td>
+</tr>
+<tr>
+<td>
+MARQUE_VELO
+</td>
+<td>
+LIBELLE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Libell?? de la marque du v??lo : BTWIN, GITANE, NAKAMURA, TREK (CK)
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+COUT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+F
+</td>
+<td>
+Co??t de l'op??ration total TTC
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+DATE_DEBUT_REELLE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+F
+</td>
+<td>
+Date de d??but r??elle de l'op??ration
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+DATE_FIN_REELLE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+F
+</td>
+<td>
+Date de fin r??elle de l'op??ration
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+DUREE_PREVUE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Dur??e pr??vue de l'op??ration en jours
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+ETAT
+</td>
+<td>
+CHAR
+</td>
+<td align="right">
+        10
+</td>
+<td>
+O
+</td>
+<td>
+Etat de l'op??ration : Ouverte, En cours, Annull??e, Termin??e (CK)
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+ID_OPERATION
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant de l'op??ration (PK)
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+INTITULE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        50
+</td>
+<td>
+O
+</td>
+<td>
+Intitul?? de l'op??ration
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+REPARATEUR
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+F
+</td>
+<td>
+R??parateur charg?? de l'op??ration (FK)
+</td>
+</tr>
+<tr>
+<td>
+OPERATION
+</td>
+<td>
+REPARATION
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+F
+</td>
+<td>
+R??paration associ??e ?? l'op??ration (FK)
+</td>
+</tr>
+<tr>
+<td>
+REGLEMENT
+</td>
+<td>
+DATE_REGLEMENT
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Date de r??glement de la r??paration
+</td>
+</tr>
+<tr>
+<td>
+REGLEMENT
+</td>
+<td>
+FACTURE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Facture associ??e au r??glement TTC (FK)
+</td>
+</tr>
+<tr>
+<td>
+REGLEMENT
+</td>
+<td>
+ID_REGLEMENT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du r??glement de la r??paration (PK)
+</td>
+</tr>
+<tr>
+<td>
+REGLEMENT
+</td>
+<td>
+MONTANT
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Montant du r??glement (partiel ou total)
+</td>
+</tr>
+<tr>
+<td>
+REPARATEUR
+</td>
+<td>
+ID_REPARATEUR
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du r??parateur (PK)
+</td>
+</tr>
+<tr>
+<td>
+REPARATEUR
+</td>
+<td>
+LOGIN
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Login du r??parateur
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+COUT_TOTAL
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+F
+</td>
+<td>
+Co??t total de la r??paration TTC
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+DATE_DEBUT_PREVUE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Date de d??but pr??vue de la r??paration
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+DATE_DEBUT_REELLE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+F
+</td>
+<td>
+Date de d??but r??elle de la r??paration
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+DATE_FIN_PREVUE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+O
+</td>
+<td>
+Date de fin pr??vue de la r??paration
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+DATE_FIN_REELLE
+</td>
+<td>
+DATE
+</td>
+<td align="right">
+         7
+</td>
+<td>
+F
+</td>
+<td>
+Date de fin r??elle de la r??paration
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+DUREE_PREVUE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Dur??e pr??vue de la r??paration en jours
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+ETAT
+</td>
+<td>
+CHAR
+</td>
+<td align="right">
+        10
+</td>
+<td>
+O
+</td>
+<td>
+Etat de la r??paration : Ouverte, En cours, Annull??e, Termin??e, R??gl??e (CK)
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+ID_REPARATION
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant de la r??paration (PK)
+</td>
+</tr>
+<tr>
+<td>
+REPARATION
+</td>
+<td>
+VELO
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+V??lo concern?? par la r??paration (FK)
+</td>
+</tr>
+<tr>
+<td>
+TAILLE_VELO
+</td>
+<td>
+ID_TAILLE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant de la taille du v??lo (PK)
+</td>
+</tr>
+<tr>
+<td>
+TAILLE_VELO
+</td>
+<td>
+LIBELLE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Libell?? de la taille du v??lo : XS, S, M, M/L, L/XL, XL/XXL (CK)
+</td>
+</tr>
+<tr>
+<td>
+TYPE_VELO
+</td>
+<td>
+ID_TYPE
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du type du v??lo (PK)
+</td>
+</tr>
+<tr>
+<td>
+TYPE_VELO
+</td>
+<td>
+LIBELLE
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+        20
+</td>
+<td>
+O
+</td>
+<td>
+Libell?? du type du v??lo : VTT, VTC, VAE, CARGO, HOLLANDAIS, PLIANT (CK)
+</td>
+</tr>
+<tr>
+<td>
+VELO
+</td>
+<td>
+ID_VELO
+</td>
+<td>
+NUMBER
+</td>
+<td align="right">
+        22
+</td>
+<td>
+O
+</td>
+<td>
+Identifiant du v??lo (PK)
+</td>
+</tr>
+<tr>
+<td>
+VELO
+</td>
+<td>
+NUM_VELO
+</td>
+<td>
+VARCHAR2
+</td>
+<td align="right">
+       100
+</td>
+<td>
+O
+</td>
+<td>
+Num??ro du v??lo (UQ)
+</td>
+</tr>
+</table>
+<p>
+
+59 rows selected.<br>
+<br>
+
+
+</body>
+</html>

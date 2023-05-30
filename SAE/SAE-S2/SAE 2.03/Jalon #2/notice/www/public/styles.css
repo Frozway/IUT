@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* Barre de navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: #FFF;
+    padding: 0 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.navbar-brand{
+    width: 300px;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-brand{
+    font: "Open Sauce One";
+    font-size: 29px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #23daf8;
+}
+
+/* Liens de la navbar */
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+.nav-item {
+  margin: 0 10px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 0 10px;
+  color: #01357B;
+  transition: O.25s;
+}
+
+.nav-link:hover {
+  color: #266ecc;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.header h1{
+  margin: 90px 0 0 30px;
+  font-weight: bold;
+  color: #FFF;
+  font-size: 50px;
+}
+
+/* Test des pages d'erreurs */
+.errors{
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.errors a{
+  text-decoration: none;
+  color: #FFF;
+  background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%); 
+  border-radius: 25px;
+  padding: 5px 20px;
+  margin-right: 35px;
+  transition: 0.5s;
+}
+
+.errors a:hover{
+  color: #efefef;
+}
+
+/* Section info */
+.infos {
+  background-color: #FFF;
+  padding: 50px 0;
+  color: #01357B;
+
+}
+.infos-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.infos-left {
+  width: 50%;
+}
+.infos-right {
+  width: 50%;
+}
+.infos-right img {
+  width: 100%;
+}
+
+.infos-right img{
+  width: 500px;
+}
+
+.infos-left img{
+  width:500px;
+}
+
+/* Sectiond de contact */
+.contact {
+  background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%);
+  color: white;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-infos{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img{
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.contact-item a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* Boutons en savoir plus */
+.more-button{
+  text-decoration: none;
+  color: #FFF;
+  background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%); 
+  border-radius: 25px;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Tek-it-Izy - Intranet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:300);
+        @import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins";
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            position: absolute;
+            width: calc(100% - 40px);
+            background: #FFF;
+            padding: 0 20px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) !important;
+        }
+
+        .navbar-brand{
+            width: 300px;
+            display : flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .navbar-brand{
+            font: "Open Sauce One";
+            font-size: 29px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #23daf8;
+        }
+        
+        #logout-button{
+            align-self: flex-end;
+            text-transform: uppercase;
+            outline: 0;
+            background: #29c9f8;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            border-radius:15px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+        
+
+        #logout-button:hover,#logout-button:active,#logout-button:focus {
+            background: #19EBF8;
+        }
+
+
+        /* Page logout.php */
+        .mainpage-logout {
+        background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%);
+        font-family: "Poppins";    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 40px;
+        }
+
+        .mainpage-logout h1{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin: 130px 0 20px 0;
+        padding: 0 0 20px;
+        }
+
+        .content{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        border-radius: 50px;
+        background-color: #FFF;
+        width: 90vw;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }   
+        
+        /* Test des pages d'erreurs */
+        .errors{
+            margin-top: 15px;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .errors a{
+            text-decoration: none;
+            color: #FFF;
+            background: linear-gradient(90deg, #19EBF8 0%, #2DBBF8 50%); 
+            border-radius: 25px;
+            padding: 5px 20px;
+            margin-right: 35px;
+            transition: 0.5s;
+        }
+
+        .errors a:hover{
+            color: #efefef;
+        }
+
+  </style>
+</head>
+<body>
+    <!-- Une barre de navigation en haut de la page avec seulement un logo et un titre "Tek-it-Izy" -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="http://www.tek-it-izy.org" onclick="event.preventDefault(); window.location.href='http://www.tek-it-izy.org';">
+            <img src="https://i.imgur.com/1kzQawr.png" width="100"  class="d-inline-block align-top" alt="">
+            Tek-it-Izy
+        </a>
+   
+        <form class="form-inline">
+            <button type="button" id="logout-button" class="btn btn-outline-danger" onclick="window.location.href='http://www.tek-it-izy.org';">Logout</button>
+        </form>
+    </nav>
+
+  <section class="mainpage-logout">
+    <h1>Welcome on Tek-it-Izy - Intranet</h1>
+    <div class="content">
+        <!-- Tests des différentes erreurs-->
+        <div class="errors">
+            <a href="/page-inexistante.html">Not existing page</a>
+            <a href="/testfolder">Folder without permissions</a>
+            <a href="/arborescence">Arborescence</a>
+        </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
+
+

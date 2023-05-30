@@ -1,0 +1,69 @@
+-- ==========================
+-- fichier : ddl_surgeles.sql
+-- base : surgeles
+-- auteur(s) : LEFRANCOIS Thibaut
+-- date : 11/10/22
+-- role : ordres SQL de créationde tables
+-- projet : surgelés
+-- resultat dans : ddl_surgeles.out (si ce fichier produit une sortie)
+-- ==========================
+
+CREATE TABLE CLIENT
+(
+  IDCLI     NUMBER(4)     NOT NULL,
+  NOMCLI    VARCHAR2(50) ,
+  PRENOMCLI VARCHAR2(50) ,
+  TELCLI    NUMBER(10)   ,
+  MAILCLI   VARCHAR2(255),
+  ADRCLI    VARCHAR2(255),
+  CONSTRAINT PK_CLIENT PRIMARY KEY (IDCLI)
+);
+
+CREATE TABLE COMMANDE
+(
+  IDCOM          NUMBER(4) NOT NULL,
+  DATECOM        DATE     ,
+  DATERECEPPREVI DATE     ,
+  IDCLI          NUMBER(4) NOT NULL,
+  CONSTRAINT PK_COMMANDE PRIMARY KEY (IDCOM)
+);
+
+CREATE TABLE LIGNE_COMMANDE
+(
+  IDLIGCOM NUMBER(4)   NOT NULL,
+  QTECOM   NUMBER(4)   NOT NULL,
+  PRIXUNIT NUMBER(5,2),
+  IDPRO    NUMBER(4)   NOT NULL,
+  IDCOM    NUMBER(4)   NOT NULL,
+  CONSTRAINT PK_LIGNE_COMMANDE PRIMARY KEY (IDLIGCOM)
+);
+
+CREATE TABLE LIVRAISON
+(
+  IDLIV, IDCOM NUMBER(4) NOT NULL,
+  DATELIV      DATE     ,
+  IDCOM        NUMBER(4) NOT NULL,
+  IDLIV        NUMBER(4) NOT NULL,
+  IDCOM        NUMBER(4) NOT NULL,
+  CONSTRAINT PK_LIVRAISON PRIMARY KEY (IDLIV, IDCOM)
+);
+
+CREATE TABLE LIVREUR
+(
+  IDLIV        NUMBER(4)    NOT NULL,
+  NOMLIV       VARCHAR2(50),
+  IDCOM        NUMBER(4)    NOT NULL,
+  IDLIV, IDCOM NUMBER(4)    NOT NULL,
+  CONSTRAINT PK_LIVREUR PRIMARY KEY (IDLIV)
+);
+
+CREATE TABLE PRODUIT
+(
+  IDPRO   NUMBER(4)    NOT NULL,
+  NOMPRO  VARCHAR2(50) NOT NULL,
+  TYPEPRO VARCHAR2(7)  NOT NULL,
+  IDLIV   NUMBER(4)    NOT NULL,
+  CONSTRAINT PK_PRODUIT PRIMARY KEY (IDPRO)
+);
+
+spool C:\Users\tibol\OneDrive\Bureau\BD - TP 3\ddl_surgeles.sql.out

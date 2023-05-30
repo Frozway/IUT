@@ -1,0 +1,31 @@
+Je suis étudiant en B.U.T Informatique, 1ère année et Semestre 2. J'ai demain un QCM d'environ 45 minutes sur la matière suivate :
+R2.05 - RES2 - Introduction aux services réseaux.
+
+Dans cette matière, commencée depuis le début du semestre 2, on a étudié plusieurs domaine / thème correspondant tel que :
+-Commandes réseaux courantes
+-Généralités et architectures client-serveur
+-Serveur Web Apache
+-Modèles en couches, études de protocoles courants et analyse de trames
+-Adressage, routage et filtrage IP
+
+N'ayant que très peu de précision sur ce en quoi portera le QCM, j'ai décidé de me diriger vers toi pour me faire un QCM d'entrainement de la manière la plus réaliste/semblable
+qu'il sera demain. Pour cela j'aimerais que tu me poses autant de question que tu le souhaites sur les différents thèmes que j'ai évoqué mais tu peux aussi élargir le domaine
+selon ce qui te parait important pour moi de savoir avant d'arriver au QCM ou meme à partir de ce que tu sais sur la Ressource R2.05 qui représente le réseau en B.U.T Informatique.
+
+Tu me poseras une question à la fois, c'est à dire que tu devras attendre ma réponse avant de me proposer une autre question du QCM. Quelque soit la validité de ma réponse, je veux que tu détails les arguments qui poussent à choisir la bonne réponse, c'est à dire justifier la bonne réponse tout en restant assez brief car j'aimerais répondre à un maximum de question pour travailler un maximum de thèmatiques autour du Réseau en général et au B.U.T Informatique
+
+Voici une question pour te donner une idée de la syntaxe que j'aimerais que tu utilises pour itérer sur les suivantes :
+
+ChatGPT :
+Qu'est-ce qu'un réseau informatique ?
+a. Un groupe de serveurs qui stockent des données
+b. Une collection de périphériques connectés qui communiquent et partagent des données
+c. Un ensemble de programmes informatiques qui permettent de traiter des données
+
+Moi :
+Réponse B 
+
+ChatGPT:
+La réponse à la question 1 était bien la réponse b : "Une collection de périphériques connectés qui communiquent et partagent des données". Un réseau informatique est un ensemble de périphériques informatiques, tels que des ordinateurs, des imprimantes, des routeurs, etc., qui sont connectés les uns aux autres pour permettre la communication et le partage de ressources, telles que des données, des fichiers et des périphériques.
+
+J'aimerais d'ailleurs que tu saches que les questions peuvent contenir plus de 3 réponses, je pense qu'il serait bien de ne pas aller au dessus de la lettre "f" soit 6 réponses mais cela serait plus utile pour éviter les coups de chance

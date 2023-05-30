@@ -1,0 +1,116 @@
+évolution du prix des chambres en fonction des nombres de chmabre : coefficient de corélation, ecart type, median
+nuage de points
+
+nombre de résevrations en fonctions du mois hotel
+
+taux d'occupation 
+janvier car prix moins cher et nouvel an
+
+EurosMillions : 
+
+Tranche d'âge de joueur
+
+=SI(Q4>D304; "Élevé";  "Normal")
+
+4
+13
+25
+31
+41
+44
+55
+60
+64
+79
+83
+89
+91
+96
+101
+102
+108
+111
+123
+134
+136
+141
+150
+152
+153
+159
+161
+169
+174
+179
+189
+199
+205
+208
+211
+224
+231
+233
+240
+252
+256
+263
+267
+268
+271
+279
+287
+288
+293
+298
+299
+
+=SI(Q4>D304; "Élevé";  "Normal")
+=SI(Q25>D304; "Élevé";  "Normal")
+=SI(Q31>D304; "Élevé";  "Normal")
+=SI(Q41>D304; "Élevé";  "Normal")
+=SI(Q44>D304; "Élevé";  "Normal")
+=SI(Q55>D304; "Élevé";  "Normal")
+=SI(Q60>D304; "Élevé";  "Normal")
+=SI(Q64>D304; "Élevé";  "Normal")
+=SI(Q79>D304; "Élevé";  "Normal")
+=SI(Q83>D304; "Élevé";  "Normal")
+=SI(Q89>D304; "Élevé";  "Normal")
+=SI(Q91>D304; "Élevé";  "Normal")
+=SI(Q96>D304; "Élevé";  "Normal")
+=SI(Q102>D304; "Élevé";  "Normal")
+=SI(Q101>D304; "Élevé";  "Normal")
+=SI(Q108>D304; "Élevé";  "Normal")
+=SI(Q111>D304; "Élevé";  "Normal")
+=SI(Q123>D304; "Élevé";  "Normal")
+=SI(Q134>D304; "Élevé";  "Normal")
+=SI(Q136>D304; "Élevé";  "Normal")
+=SI(Q141>D304; "Élevé";  "Normal")
+=SI(Q150>D304; "Élevé";  "Normal")
+=SI(Q152>D304; "Élevé";  "Normal")
+=SI(Q153>D304; "Élevé";  "Normal")
+=SI(Q159>D304; "Élevé";  "Normal")
+=SI(Q161>D304; "Élevé";  "Normal")
+=SI(Q169>D304; "Élevé";  "Normal")
+=SI(Q174>D304; "Élevé";  "Normal")
+=SI(Q179>D304; "Élevé";  "Normal")
+=SI(Q189>D304; "Élevé";  "Normal")
+=SI(Q199>D304; "Élevé";  "Normal")
+=SI(Q205>D304; "Élevé";  "Normal")
+=SI(Q208>D304; "Élevé";  "Normal")
+=SI(Q211>D304; "Élevé";  "Normal")
+=SI(Q224>D304; "Élevé";  "Normal")
+=SI(Q231>D304; "Élevé";  "Normal")
+=SI(Q233>D304; "Élevé";  "Normal")
+=SI(Q240>D304; "Élevé";  "Normal")
+=SI(Q252>D304; "Élevé";  "Normal")
+=SI(Q256>D304; "Élevé";  "Normal")
+=SI(Q263>D304; "Élevé";  "Normal")
+=SI(Q267>D304; "Élevé";  "Normal")
+=SI(Q268>D304; "Élevé";  "Normal")
+=SI(Q271>D304; "Élevé";  "Normal")
+=SI(Q279>D304; "Élevé";  "Normal")
+=SI(Q287>D304; "Élevé";  "Normal")
+=SI(Q288>D304; "Élevé";  "Normal")
+=SI(Q293>D304; "Élevé";  "Normal")
+=SI(Q298>D304; "Élevé";  "Normal")
+=SI(Q299>D304; "Élevé";  "Normal")

@@ -1,0 +1,8 @@
+3 millions en france et 200 millions en europe à chaque tirage (grille joué) (c'est une moyenne) (une grille coûte 2 euros)
+
+Partie 1
+
+L’office de tourisme de La Rochelle décide de commander une étude sur l’occupation de
+trois hôtels, sur l'année 2019, à une entreprise d’analyse de données. Vous êtes chargés de
+cette étude. La base de données utilisée est stockée dans un fichier csv que vous ne pouvez pas ouvrir) , on vous détaillera alors celle ci en vous donnant les noms des colonnes (pour mieux comprendre de quoi est composé la base de donnée) ainsi que la première ligne de donnée pour vous donner un aperçu. Les données sont basées que sur une année (2019).
+Les choix des données à organiser, analyser et comparer restent à votre convenance. Malgré l'inaccessibilité au fichier csv, vous pourrez donner des conseils et expliquer les démarches qui pourraient être à faire dans Excel pour réaliser l'étude. Des graphiques seront surement à faire à toi de nous dire lesquels.

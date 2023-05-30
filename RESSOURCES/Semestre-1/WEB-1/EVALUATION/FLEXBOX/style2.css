@@ -1,0 +1,32 @@
+nav{
+    background-color: rgb(151, 151, 151);
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    color: black;
+    background-color: rgb(201, 201, 201);
+}
+
+ul{
+    display : flex ;
+    padding : 5px ;
+    margin : 1 ;
+}
+
+.A{
+    background-color: blue;
+}
+
+.B{
+    background-color: yellow;
+}
+
+.C{
+    background-color: pink;
+}
+
+.D{
+    background-color: rgb(178, 62, 56);
+}

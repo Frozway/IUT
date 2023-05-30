@@ -1,0 +1,7 @@
+"ID_TYPE_CHAMBRE","TYPE_CHAMBRE","CAPACITE","DESCRIPTION"
+1,"single",1,"A room assigned to one person. May have one or more beds"
+2,"double",2,"A room assigned to two people. May have one or more beds"
+3,"triple",3,"A room that can accommodate three persons and has been fitted with three twin beds, one double bed and one twin bed or two double beds"
+4,"quad",4,"A room assigned to four people. May have two or more beds"
+5,"queen",2,"A room with a queen-sized bed. May be occupied by one or more people"
+6,"king",2,"A room with a king-sized bed. May be occupied by one or more people"

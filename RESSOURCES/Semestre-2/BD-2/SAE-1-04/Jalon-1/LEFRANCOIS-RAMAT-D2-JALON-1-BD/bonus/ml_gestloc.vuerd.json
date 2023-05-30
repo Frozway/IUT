@@ -1,0 +1,1046 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -476.1586805555592,
+    "scrollLeft": -446.40000000000026,
+    "zoomLevel": 0.8,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "Oracle",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "AGENCE",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_AGENCE",
+            "comment": "Numéro de l'agence",
+            "dataType": "NUMBER(4)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.130859375,
+              "widthComment": 117.93994140625,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "9d1e8c04-3302-4efb-96db-58f8db207ab3"
+          },
+          {
+            "name": "NOM_AGENCE",
+            "comment": "Nom de l'agence",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 94.4599609375,
+              "widthComment": 99.15087890625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "35f97495-2512-4902-a1c3-4913d12d72d4"
+          },
+          {
+            "name": "ADR_AGENCE",
+            "comment": "Adresse de l'agence",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 91.578125,
+              "widthComment": 119.3935546875,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "8f5e9d33-8e9e-4b14-9408-ce6e2a9b669b"
+          },
+          {
+            "name": "TEL_AGENCE",
+            "comment": "Téléphone de l'agence",
+            "dataType": "VARCHAR2(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.97265625,
+              "widthComment": 120,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "955e3201-c1d4-411b-82f5-2c72fa0b1767"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 414.5001,
+          "top": 440.4056,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#FF0000"
+        },
+        "visible": true,
+        "id": "627cee61-dd1a-48a1-aa4c-852caeeadb79"
+      },
+      {
+        "name": "PROPRIETAIRE",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_PROPRIO",
+            "comment": "Numéro du propriétaire",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.18359375,
+              "widthComment": 120,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "924d94bc-2a24-49ec-89c2-59697701ae86"
+          },
+          {
+            "name": "NOM_PROPRIO",
+            "comment": "Nom du propriétaire",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 99.5126953125,
+              "widthComment": 116.88623046875,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "f10fa9c8-4683-4419-b5fa-345e3fcf6ad1"
+          },
+          {
+            "name": "PRE_PROPRIO",
+            "comment": "Prénom du propriétaire",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.91357421875,
+              "widthComment": 120,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "c509bfbb-b7dc-46a9-9fdc-450b4979f50d"
+          },
+          {
+            "name": "TEL_PROPRIO",
+            "comment": "Téléphone du propriéataire",
+            "dataType": "VARCHAR2(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.025390625,
+              "widthComment": 120,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "dbd7e3bd-3b52-4a48-9a39-80db9103c773"
+          },
+          {
+            "name": "NB_BIEN",
+            "comment": "Nombre de bien du propriétaire",
+            "dataType": "NUMBER(2)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "f7e78b60-7c35-45d5-9301-6ad06d105789"
+          },
+          {
+            "name": "ID_AGENCE",
+            "comment": "Numéro de l'agence",
+            "dataType": "NUMBER(4)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 77.130859375,
+              "widthComment": 117.93994140625,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "095f6721-b233-4180-89ab-e09608c2c97d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 416.3946,
+          "top": 705.5333,
+          "zIndex": 9,
+          "widthName": 97.83056640625,
+          "widthComment": 60,
+          "color": "#0038FC"
+        },
+        "visible": true,
+        "id": "25b82d82-996c-42ff-9bb8-49cbbb557477"
+      },
+      {
+        "name": "BIEN",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_BIEN",
+            "comment": "Numéro du bien",
+            "dataType": "NUMBER(3)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 94.498046875,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "05760624-167b-47cf-88e2-75a9bfccc87b"
+          },
+          {
+            "name": "ADRESSE_BIEN",
+            "comment": "Adresse du bien",
+            "dataType": "VARCHAR2(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.70263671875,
+              "widthComment": 95.95166015625,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "a69ee14b-d8c4-4fe3-b70d-905c66df4508"
+          },
+          {
+            "name": "TYPE_BIEN",
+            "comment": "Bien meublé ou non",
+            "dataType": "VARCHAR2(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.525390625,
+              "widthComment": 117.6416015625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "9768bb04-6fcb-4321-bf07-9797721c1182"
+          },
+          {
+            "name": "DEBUT_BAIL",
+            "comment": "Date Bail du bien",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 81.47265625,
+              "widthComment": 101.0107421875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3896cefe-4874-4085-891c-08e64b833b7b"
+          },
+          {
+            "name": "FIN_BAIL",
+            "comment": "Date Bail du bien",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 101.0107421875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "759d3070-19ef-4bb6-9e5a-c2fb91291839"
+          },
+          {
+            "name": "STATUT_BIEN",
+            "comment": "Bien occupé ou non",
+            "dataType": "VARCHAR2(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 88.19482421875,
+              "widthComment": 116.92431640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "0a76403c-c2e2-4d73-a370-8d0b11e242dd"
+          },
+          {
+            "name": "ID_PROPRIO",
+            "comment": "Numéro du propriétaire",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 82.18359375,
+              "widthComment": 120,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "52215b35-7189-4975-8607-06844eda1723"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 959.7613,
+          "top": 691.7666,
+          "zIndex": 8,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#FFF600"
+        },
+        "visible": true,
+        "id": "d68925cf-5e96-4b3c-b1d7-f70da179fff2"
+      },
+      {
+        "name": "LOCATAIRE",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_LOCATAIRE",
+            "comment": "Numéro du locataire",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.98388671875,
+              "widthComment": 119.05712890625,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "9f86fef1-b164-46f3-802b-18afc11b9bf3"
+          },
+          {
+            "name": "NOM_LOCATAIRE",
+            "comment": "Nom du locataire",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 111.31298828125,
+              "widthComment": 100.26806640625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "90b97d7a-a793-44a5-acb5-c76faaaa1f10"
+          },
+          {
+            "name": "PRE_LOCATAIRE",
+            "comment": "Prénom du locataire",
+            "dataType": "VARCHAR2(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 107.7138671875,
+              "widthComment": 118.33984375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "7572c096-2f44-4273-ae2c-255bb80fe50f"
+          },
+          {
+            "name": "TEL_LOCATAIRE",
+            "comment": "Téléphone du locataire",
+            "dataType": "VARCHAR2(10)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 104.82568359375,
+              "widthComment": 120,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "1ce4f4b7-9c0b-43d2-bb69-72fe8475d5f8"
+          },
+          {
+            "name": "ID_LOCATION",
+            "comment": "Numéro de location",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 87.71875,
+              "widthComment": 114.72802734375,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "c22f181e-7efa-42d2-925b-ce104831e022"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1497.3095,
+          "top": 454.3585,
+          "zIndex": 11,
+          "widthName": 73.75390625,
+          "widthComment": 60,
+          "color": "#FF00EC"
+        },
+        "visible": true,
+        "id": "bfc28216-5793-429f-a636-349f4de4d73b"
+      },
+      {
+        "name": "LOCATION",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_LOCATION",
+            "comment": "Numéro de location",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.71875,
+              "widthComment": 114.72802734375,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "2d0ba430-a0f0-40d2-a4d2-018f0ff35899"
+          },
+          {
+            "name": "ID_FACTURE_LOYER",
+            "comment": "Numéro de facture du loyer",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 134.20263671875,
+              "widthComment": 120,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "8cdcf154-ddca-4b63-862d-2d1e757c62c6"
+          },
+          {
+            "name": "TOTAL_CHARGES",
+            "comment": "Facture mensuel des charges",
+            "dataType": "NUMBER(5,2)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 114.2138671875,
+              "widthComment": 120,
+              "widthDataType": 85.0654296875,
+              "widthDefault": 60
+            },
+            "id": "5daf6024-1295-43da-8cf5-c9b564efdd8c"
+          },
+          {
+            "name": "TOTAL_LOYER",
+            "comment": "Montant mensuel du loyer",
+            "dataType": "NUMBER(6,2)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 93.99658203125,
+              "widthComment": 120,
+              "widthDataType": 85.0654296875,
+              "widthDefault": 60
+            },
+            "id": "01389c8e-e43b-428d-8251-efd7300f9760"
+          },
+          {
+            "name": "STATUT_LOYER",
+            "comment": "Loyer payé ou non",
+            "dataType": "VARCHAR2(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.9248046875,
+              "widthComment": 109.6943359375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "24ed86c2-5063-4bd6-89d7-9c9e32b1b3e6"
+          },
+          {
+            "name": "ID_BIEN",
+            "comment": "Numéro du bien",
+            "dataType": "NUMBER(3)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 94.498046875,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "397ebc11-92d9-4130-8c9f-60644e7b740e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 947.2221,
+          "top": 408.1109,
+          "zIndex": 4,
+          "widthName": 67.48876953125,
+          "widthComment": 60,
+          "color": "#00FFAA"
+        },
+        "visible": true,
+        "id": "9bf91ac5-0684-4b7e-a1a1-2080f12ab3de"
+      },
+      {
+        "name": "GESTION",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_GESTION",
+            "comment": "Numéro de gestion",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.736328125,
+              "widthComment": 111.83984375,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "a704b765-5c5e-414e-a38a-d51a6655aeaa"
+          },
+          {
+            "name": "ID_FACTURE_PROPRIO",
+            "comment": "Numéro de facture du propriétaire",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 150.08447265625,
+              "widthComment": 120,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "c8c9ccd1-fa91-439c-9843-2819430dc015"
+          },
+          {
+            "name": "TOTAL_GESTION",
+            "comment": "Montant de la gestion des biens",
+            "dataType": "NUMBER(5,2)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 108.43115234375,
+              "widthComment": 120,
+              "widthDataType": 85.0654296875,
+              "widthDefault": 60
+            },
+            "id": "6219a1ab-498a-464e-b44b-6c7397c3b0cb"
+          },
+          {
+            "name": "STATUT_GESTION",
+            "comment": "Gestion payé ou non ",
+            "dataType": "VARCHAR2(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 116.359375,
+              "widthComment": 120,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "257e7883-b9c6-44af-81a9-b2ec1d14944e"
+          },
+          {
+            "name": "ID_PROPRIO",
+            "comment": "Numéro du propriétaire",
+            "dataType": "NUMBER(5)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 82.18359375,
+              "widthComment": 120,
+              "widthDataType": 74.2236328125,
+              "widthDefault": 60
+            },
+            "id": "1864a92d-2d6d-4e29-8594-92350604e86e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 390.7315,
+          "top": 987.4527,
+          "zIndex": 10,
+          "widthName": 60.50634765625,
+          "widthComment": 60,
+          "color": "#00CF08"
+        },
+        "visible": true,
+        "id": "2c810b4c-7f47-4bea-b946-ea7b6a51c60e"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "627cee61-dd1a-48a1-aa4c-852caeeadb79",
+          "columnIds": [
+            "9d1e8c04-3302-4efb-96db-58f8db207ab3"
+          ],
+          "x": 623.8194359375,
+          "y": 591.4056,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "25b82d82-996c-42ff-9bb8-49cbbb557477",
+          "columnIds": [
+            "095f6721-b233-4180-89ab-e09608c2c97d"
+          ],
+          "x": 624.6253128906251,
+          "y": 705.5333,
+          "direction": "top"
+        },
+        "constraintName": "fk_agence_to_proprietaire",
+        "visible": true,
+        "id": "799cd603-6aac-4930-b3e6-756c3d58ad3d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "25b82d82-996c-42ff-9bb8-49cbbb557477",
+          "columnIds": [
+            "924d94bc-2a24-49ec-89c2-59697701ae86"
+          ],
+          "x": 624.6253128906251,
+          "y": 897.5333,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "2c810b4c-7f47-4bea-b946-ea7b6a51c60e",
+          "columnIds": [
+            "1864a92d-2d6d-4e29-8594-92350604e86e"
+          ],
+          "x": 624.2481015625,
+          "y": 987.4527,
+          "direction": "top"
+        },
+        "constraintName": "fk_proprietaire_to_financer",
+        "visible": true,
+        "id": "7f81832e-9c9c-4832-aa69-5a07cd177117"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d68925cf-5e96-4b3c-b1d7-f70da179fff2",
+          "columnIds": [
+            "05760624-167b-47cf-88e2-75a9bfccc87b"
+          ],
+          "x": 1172.7019738281251,
+          "y": 691.7666,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "9bf91ac5-0684-4b7e-a1a1-2080f12ab3de",
+          "columnIds": [
+            "397ebc11-92d9-4130-8c9f-60644e7b740e"
+          ],
+          "x": 1172.79778359375,
+          "y": 600.1109,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_bien_to_location",
+        "visible": true,
+        "id": "be8a4933-25f8-4ea4-a43f-96b64257582d"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9bf91ac5-0684-4b7e-a1a1-2080f12ab3de",
+          "columnIds": [
+            "2d0ba430-a0f0-40d2-a4d2-018f0ff35899"
+          ],
+          "x": 1398.3734671875,
+          "y": 504.1109,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "bfc28216-5793-429f-a636-349f4de4d73b",
+          "columnIds": [
+            "c22f181e-7efa-42d2-925b-ce104831e022"
+          ],
+          "x": 1497.3095,
+          "y": 540.1085,
+          "direction": "left"
+        },
+        "constraintName": "fk_location_to_locataire",
+        "visible": true,
+        "id": "0b6c220c-a83c-40fc-a636-aaae838de00c"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "25b82d82-996c-42ff-9bb8-49cbbb557477",
+          "columnIds": [
+            "924d94bc-2a24-49ec-89c2-59697701ae86"
+          ],
+          "x": 832.8560257812501,
+          "y": 801.5333,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "d68925cf-5e96-4b3c-b1d7-f70da179fff2",
+          "columnIds": [
+            "52215b35-7189-4975-8607-06844eda1723"
+          ],
+          "x": 959.7613,
+          "y": 798.0166,
+          "direction": "left"
+        },
+        "constraintName": "fk_proprietaire_to_bien",
+        "visible": true,
+        "id": "cbf2f60f-3789-42dd-924d-482a22754c52"
+      }
+    ]
+  }
+}
