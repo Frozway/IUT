@@ -29,6 +29,8 @@ private:
     Avatar * itsAvatar;
     std::list<Obstacle *> itsObstacles;
 
+    int itsCameraPosition; // Ajout de la position de la caméra
+
     int itsPosition;
     int itsSpeed;
 };

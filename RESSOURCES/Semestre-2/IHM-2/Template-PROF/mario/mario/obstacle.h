@@ -8,14 +8,14 @@ class Obstacle
 {
 public:
     Obstacle(int x, int y);
-    void draw(QPainter * painter);
+    void draw(QPainter * aPainter, int cameraX); // Ajout de la position de la caméra
     QRect getRect();
     void calculatePosition(int speed);
 
 private:
+    QRect itsObstacle;
     int itsX;
     int itsY;
-    QRect itsObstacle;
 };
 
 #endif // OBSTACLE_H

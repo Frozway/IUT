@@ -11,9 +11,9 @@ Obstacle::Obstacle(int x, int y)
     itsObstacle.setHeight(20);
 }
 
-void Obstacle::draw(QPainter * aPainter)
+void Obstacle::draw(QPainter * aPainter, int cameraX) // Ajout de la position de la caméra
 {
-    itsObstacle.moveTo(itsX, itsY);
+    itsObstacle.moveTo(itsX - cameraX, itsY); // Soustraire la position de la caméra
     aPainter->setPen(Qt::red);
     aPainter->setBrush(Qt::SolidPattern);
     aPainter->drawRect(itsObstacle);

@@ -11,12 +11,13 @@ public:
     void setXSpeed(int aSpeed);
     void setYSpeed(int aSpeed);
     void calculatePosition();
-    void draw(QPainter * aPainter);
+    void draw(QPainter *aPainter, int cameraX); // Ajout de la position de la caméra
     QRect getRect();
     int getX();
     void jump();
 
 private:
+    QRect itsAvatar;
     int itsX;
     int itsY;
     int itsWidth;
@@ -24,7 +25,6 @@ private:
     int itsXSpeed;
     int itsYSpeed;
     int itsJump;
-    QRect itsAvatar;
 };
 
 #endif // AVATAR_H

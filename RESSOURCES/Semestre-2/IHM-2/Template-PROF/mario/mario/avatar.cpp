@@ -54,9 +54,9 @@ void Avatar::calculatePosition()
 //    qDebug() << itsY << ":" << itsYSpeed << ":" << itsJump;
 }
 
-void Avatar::draw(QPainter *aPainter)
+void Avatar::draw(QPainter *aPainter, int cameraX) // Ajout de la position de la caméra
 {
-    itsAvatar.moveTo(itsX, itsY);
+    itsAvatar.moveTo(itsX - cameraX, itsY); // Soustraire la position de la caméra
     aPainter->setPen(Qt::blue);
     aPainter->setBrush(Qt::SolidPattern);
     aPainter->drawRect(itsAvatar);
