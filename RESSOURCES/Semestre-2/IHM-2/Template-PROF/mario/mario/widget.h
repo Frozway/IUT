@@ -29,7 +29,8 @@ private:
     Avatar * itsAvatar;
     std::list<Obstacle *> itsObstacles;
 
-    int itsCameraPosition; // Ajout de la position de la caméra
+    int itsCameraPositionX; // Position de la caméra sur l'axe X
+    int itsCameraPositionY; // Position de la caméra sur l'axe Y
 
     int itsPosition;
     int itsSpeed;

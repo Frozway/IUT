@@ -7,20 +7,22 @@ Widget::Widget(QWidget *parent)
 {
     itsAvatar = new Avatar();
 
-    itsObstacles.push_back(new Obstacle(50, 330));
-    itsObstacles.push_back(new Obstacle(350, 330));
-    itsObstacles.push_back(new Obstacle(200, 330));
-    itsObstacles.push_back(new Obstacle(100, 330));
+    itsObstacles.push_back(new Obstacle(50, 720)); // Hauteur du widget - hauteur de l'obstacle
+    itsObstacles.push_back(new Obstacle(350, 720)); // Hauteur du widget - hauteur de l'obstacle
+    itsObstacles.push_back(new Obstacle(200, 720)); // Hauteur du widget - hauteur de l'obstacle
+    itsObstacles.push_back(new Obstacle(100, 720)); // Hauteur du widget - hauteur de l'obstacle
 
-    setFixedSize(300, 400);
+    setFixedSize(1920, 1080);
     itsPosition = 0;
     itsSpeed = 0;
-    itsCameraPosition = 0; // Initialisation de la position de la caméra
+    itsCameraPositionX = 0; // Initialisation de la position de la caméra sur l'axe X
+    itsCameraPositionY = 0; // Initialisation de la position de la caméra sur l'axe Y
 
     itsTimer = new QTimer(this);
     connect(itsTimer, SIGNAL(timeout()), this, SLOT(gameLoop()));
     itsTimer->start(10);
 }
+
 
 Widget::~Widget()
 {
@@ -31,12 +33,18 @@ Widget::~Widget()
 
 void Widget::gameLoop()
 {
-    float lerpSpeed = 0.1f; // Vitesse d'interpolation
-    itsCameraPosition = itsCameraPosition + (itsAvatar->getX() - itsCameraPosition) * lerpSpeed;
-
     itsAvatar->setXSpeed(itsSpeed);
     itsAvatar->calculatePosition();
-    itsPosition = itsAvatar->getX();
+
+    if (itsAvatar->getX() > 960 && itsAvatar->getX() < 1920 - 960) // Si l'avatar est au milieu de l'écran sur l'axe X
+    {
+        itsCameraPositionX = itsAvatar->getX() - 960; // La caméra suit l'avatar
+    }
+
+    if (itsAvatar->getY() < 720 && itsAvatar->getY() > 1080 - 720) // Si l'avatar est au milieu de l'écran sur l'axe Y
+    {
+        itsCameraPositionY = itsAvatar->getY() - 720; // La caméra suit l'avatar
+    }
 
     for (Obstacle* obs : itsObstacles)
     {
@@ -46,17 +54,18 @@ void Widget::gameLoop()
     repaint();
 }
 
+
 void Widget::paintEvent(QPaintEvent *event)
 {
     Q_UNUSED(event);
 
     QPainter * painter = new QPainter(this);
 
-    itsAvatar->draw(painter, itsCameraPosition); // Passer la position de la caméra à la méthode draw
+    itsAvatar->draw(painter, itsCameraPositionX, itsCameraPositionY); // Passer la position de la caméra à la méthode draw
 
     for (Obstacle* obs : itsObstacles)
     {
-        obs->draw(painter, itsCameraPosition); // Passer la position de la caméra à la méthode draw
+        obs->draw(painter, itsCameraPositionX, itsCameraPositionY); // Passer la position de la caméra à la méthode draw
     }
 
     painter->end();

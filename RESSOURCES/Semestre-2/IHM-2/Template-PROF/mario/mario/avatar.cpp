@@ -3,7 +3,7 @@
 Avatar::Avatar()
 {
     itsX = 150;
-    itsY = 300;
+    itsY = 720; // Hauteur du widget - hauteur de l'avatar
     itsWidth = 20;
     itsHeight = 50;
     itsXSpeed = 0;
@@ -15,6 +15,7 @@ Avatar::Avatar()
     itsAvatar.setWidth(itsWidth);
     itsAvatar.setHeight(itsHeight);
 }
+
 
 void Avatar::setXSpeed(int aSpeed)
 {
@@ -45,22 +46,23 @@ void Avatar::calculatePosition()
     }
     itsX = itsX + itsXSpeed;
     itsY = itsY + itsYSpeed;
-    if (itsY >= 300)
+    if (itsY >= 720)
     {
-        itsY = 300;
+        itsY = 720;
         itsYSpeed = 0;
         itsJump = 0;
     }
 //    qDebug() << itsY << ":" << itsYSpeed << ":" << itsJump;
 }
 
-void Avatar::draw(QPainter *aPainter, int cameraX) // Ajout de la position de la caméra
+void Avatar::draw(QPainter *aPainter, int cameraX, int cameraY) // Ajout de la position de la caméra sur l'axe Y
 {
-    itsAvatar.moveTo(itsX - cameraX, itsY); // Soustraire la position de la caméra
+    itsAvatar.moveTo(itsX - cameraX, itsY - cameraY); // Soustraire la position de la caméra sur l'axe Y
     aPainter->setPen(Qt::blue);
     aPainter->setBrush(Qt::SolidPattern);
     aPainter->drawRect(itsAvatar);
 }
+
 
 QRect Avatar::getRect()
 {
@@ -70,6 +72,11 @@ QRect Avatar::getRect()
 int Avatar::getX()
 {
     return itsX;
+}
+
+int Avatar::getY()
+{
+    return itsY;
 }
 
 void Avatar::jump()

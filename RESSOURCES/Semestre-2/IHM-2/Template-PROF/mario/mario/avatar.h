@@ -11,9 +11,10 @@ public:
     void setXSpeed(int aSpeed);
     void setYSpeed(int aSpeed);
     void calculatePosition();
-    void draw(QPainter *aPainter, int cameraX); // Ajout de la position de la caméra
+    void draw(QPainter *aPainter, int cameraX, int cameraY); // Ajout de la position de la caméra
     QRect getRect();
     int getX();
+    int getY();
     void jump();
 
 private:
